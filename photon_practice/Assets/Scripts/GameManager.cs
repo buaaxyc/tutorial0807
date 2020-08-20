@@ -9,6 +9,48 @@ namespace Com.SJTU.XYCsGame
     // In Unity the best way to reuse GameObjects is to turn them into prefabs.
     public class GameManager : MonoBehaviourPunCallbacks
     {
+        #region Public Fields
+
+        // Duplicated code for the same result is something that you should avoid at all costs. This will also be a good time to introduce a very handy programming concept, "Singleton".
+        // Notice we've decorated the Instance variable with the [static] keyword, meaning that this variable is available without having to hold a pointer to an instance of GameManager, so you can simply do GameManager.Instance.xxx() from anywhere in your code. It's very practical indeed!
+        public static GameManager Instance;
+
+        [Tooltip("The prefab to use for representing the player")]
+        public GameObject playerPrefab;
+
+        #endregion
+
+        #region MonoBehaviour CallBacks
+
+        void Start()
+        {
+            // Singleton assignment
+            Instance = this;
+
+            // Instantiate the player
+            if (playerPrefab == null)
+            {
+                Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
+            }
+            else
+            {
+                if (PlayerManager.LocalPlayerInstance == null)
+                {
+                    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", Application.loadedLevelName);
+
+                    // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+                    // Notice that we instantiate well above the floor (5 units above while the player is only 2 units high). This is one way amongst many other to prevent collisions when new players join the room, players could be already moving around the center of the arena, and so it avoids abrupt collisions. A "falling" player is also a nice and clean indication and introduction of a new entity in the game.
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                }
+                else
+                {
+                    Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
+                }
+            }
+        }
+
+        #endregion
+
         #region Photon Callbacks
 
         /// <summary>
@@ -41,7 +83,7 @@ namespace Com.SJTU.XYCsGame
                 Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
                 // When current client is Master Client, load level.
-                // What if Master Client disconnects??
+                // What if Master Client disconnects, will PUN select other players randomly as the master??
                 LoadArena(); // the Method will check again whether this is Master Client.
             }
         }
@@ -52,7 +94,7 @@ namespace Com.SJTU.XYCsGame
 
         public void LeaveRoom()
         {
-            PhotonNetwork.LeaveRoom();
+            PhotonNetwork.LeaveRoom(); // where to destroy/delete the player instance, by Photon automatically??
         }
 
         #endregion

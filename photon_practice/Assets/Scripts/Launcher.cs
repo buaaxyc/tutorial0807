@@ -115,8 +115,11 @@ namespace Com.SJTU.XYCsGame
 
         public override void OnDisconnected(DisconnectCause cause)
         {
-            controlPanel.SetActive(true);
-            progressLabel.SetActive(false);
+            if (controlPanel != null && progressLabel != null)
+            {
+                controlPanel.SetActive(true);
+                progressLabel.SetActive(false);
+            }
 
             isConnecting = false;
 

@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Com.SJTU.XYCsGame
 {
-    public class PlayerAnimatorManager : MonoBehaviour
+    public class PlayerAnimatorManager : MonoBehaviourPun
     {
         #region Private Fields
 
@@ -32,6 +33,14 @@ namespace Com.SJTU.XYCsGame
         // Update is called once per frame
         void Update()
         {
+            // Animation Input Control
+            // why having then to enforce PhotonNetwork.IsConnected == true in our if statement? eh eh :) because during development, we may want to test this prefab without being connected. 
+            // with this additional expression, we will allow input to be used if we are not connected. It's a very simple trick and will greatly improve your workflow during development.
+            if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
+            {
+                return;
+            }
+
             if (!animator)
             {
                 return;
@@ -64,7 +73,7 @@ namespace Com.SJTU.XYCsGame
             animator.SetFloat("Speed", h * h + v * v);
             //animator.SetFloat("Speed", Mathf.Abs(h) + Mathf.Abs(v));
 
-            // Damping time makes sense: it's how long it will take to reach the desired value, but deltaTime? It essentially lets you write code that is frame rate independent since Update() is dependant on the frame rate, we need to counter this by using the deltaTime. 
+            // Damping time makes sense: it's how long it will take to reach the desired value, but deltaTime? It essentially lets you write code that is frame rate independent since Update() is dependent on the frame rate, we need to counter this by using the deltaTime. 
             animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);
         }
 
