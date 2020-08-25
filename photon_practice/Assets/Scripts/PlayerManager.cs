@@ -124,7 +124,7 @@ namespace Com.SJTU.XYCsGame
             // instantiate PlayerUI prefab for the first time (this Player prefab is instantiated in Start() of GameManager.cs)
             if (PlayerUiPrefab != null)
             {
-                GameObject _uiGo = Instantiate(PlayerUiPrefab); // (Object.)Instantiate() or PhotonNetwork.Instantiate() in GameManager.cs line43??
+                GameObject _uiGo = Instantiate(PlayerUiPrefab); // (Object.)Instantiate() or PhotonNetwork.Instantiate()??
 
                 // call SetTarget(PlayerManager) of PlayerUI.cs, send sup object 'PlayerManager' to the sub instance we've just created
                 // Another way would have been to get the PlayerUI component from the instance, and then call SetTarget directly. It's generally recommended to use components directly, but it's also good to know you can achieve the same thing in various ways.
@@ -141,7 +141,7 @@ namespace Com.SJTU.XYCsGame
             {
                 //Debug.LogWarning("test 1");
 
-                InvokeRepeating("HealthCheckingTimer", 0f, 0.5f); // compare with gameObject.SendMessage(), both use method name to call
+                InvokeRepeating("HealthCheckingTimer", 0f, 0.5f);
             }
         }
 
