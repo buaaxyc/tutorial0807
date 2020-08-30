@@ -1,0 +1,3354 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - Com.SJTU.PhotonVRKeys.GameManager
+    - Com.SJTU.PhotonVRKeys.HiddenRegion
+    - Com.SJTU.PhotonVRKeys.Launcher
+    - Com.SJTU.PhotonVRKeys.PlayerNameInputField
+    - VRKeys.BackspaceKey
+    - VRKeys.CancelKey
+    - VRKeys.ClearKey
+    - VRKeys.Controller
+    - VRKeys.DemoScene
+    - VRKeys.EnterKey
+    - VRKeys.HandCollider
+    - VRKeys.Keyboard
+    - VRKeys.LetterKey
+    - VRKeys.Mallet
+    - VRKeys.ShiftKey
+    - VRKeys.SpaceKey
+    Malimbe.FodyRunner.UnityIntegration.dll:
+    - Malimbe.FodyRunner.UnityIntegration.InspectorEditor
+    PhotonUnityNetworking.Demos.dll:
+    - Photon.Pun.Demo.Asteroids.Asteroid
+    - Photon.Pun.Demo.Asteroids.Bullet
+    - Photon.Pun.Demo.Asteroids.Spaceship
+    - Photon.Pun.Demo.PunBasics.CameraWork
+    - Photon.Pun.Demo.PunBasics.PlayerAnimatorManager
+    - Photon.Pun.Demo.PunBasics.PlayerManager
+    - Photon.Pun.Demo.PunBasics.PlayerUI
+    - Photon.Pun.Demo.SlotRacer.PlayerControl
+    - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
+    PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonAnimatorView
+    - Photon.Pun.PhotonRigidbodyView
+    - Photon.Pun.PhotonTransformView
+    - Photon.Pun.PhotonView
+    - Photon.Pun.ServerSettings
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
+    - TMPro.TextMeshProUGUI
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+    VRTK.Prefabs.Runtime.dll:
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.ActiveObjectController
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.Input.MouseVector2DAction
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.KeyBindingDisplay
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.SimulatorConfigurator
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.SimulatorFacade
+    - VRTK.Prefabs.CameraRig.SimulatedCameraRig.TransformPropertyResetter
+    - VRTK.Prefabs.CameraRig.UnityXRCameraRig.Input.UnityAxis1DAction
+    - VRTK.Prefabs.CameraRig.UnityXRCameraRig.Input.UnityButtonAction
+    Zinnia.Runtime.dll:
+    - Zinnia.Action.BooleanAction
+    - Zinnia.Action.StateEmitter
+    - Zinnia.Action.ToggleAction
+    - Zinnia.Action.Vector2Action
+    - Zinnia.Data.Collection.List.BehaviourObservableList
+    - Zinnia.Data.Collection.List.FloatObservableList
+    - Zinnia.Data.Collection.List.GameObjectObservableList
+    - Zinnia.Data.Collection.List.Vector2ObservableList
+    - Zinnia.Data.Operation.Mutation.TransformEulerRotationMutator
+    - Zinnia.Data.Operation.Mutation.TransformPositionMutator
+    - Zinnia.Data.Type.Transformation.Aggregation.FloatAdder
+    - Zinnia.Data.Type.Transformation.Aggregation.FloatMultiplier
+    - Zinnia.Data.Type.Transformation.Aggregation.Vector2Multiplier
+    - Zinnia.Data.Type.Transformation.Conversion.BooleanToFloat
+    - Zinnia.Data.Type.Transformation.Conversion.FloatToVector2
+    - Zinnia.Data.Type.Transformation.Conversion.Vector2ToVector3
+    - Zinnia.Event.BehaviourEnabledObserver
+    - Zinnia.Process.Moment.Collection.MomentProcessObservableList
+    - Zinnia.Process.Moment.MomentProcess
+    - Zinnia.Process.Moment.MomentProcessor
+    - Zinnia.Tracking.CameraRig.LinkedAliasAssociationCollection
+    - Zinnia.Tracking.Modification.GameObjectStateSwitcher
+    - Zinnia.Tracking.Velocity.AverageVelocityEstimator
+  sceneClasses:
+    Assets/Scenes/Launcher.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11220}
+    - Class: 114
+      Script: {instanceID: 11222}
+    - Class: 114
+      Script: {instanceID: 11224}
+    - Class: 114
+      Script: {instanceID: 11226}
+    - Class: 114
+      Script: {instanceID: 11228}
+    - Class: 114
+      Script: {instanceID: 11448}
+    - Class: 114
+      Script: {instanceID: 11460}
+    - Class: 114
+      Script: {instanceID: 11482}
+    - Class: 114
+      Script: {instanceID: 11586}
+    - Class: 114
+      Script: {instanceID: 11618}
+    - Class: 114
+      Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12214}
+    - Class: 114
+      Script: {instanceID: 12246}
+    - Class: 114
+      Script: {instanceID: 12300}
+    - Class: 114
+      Script: {instanceID: 12306}
+    - Class: 114
+      Script: {instanceID: 12364}
+    - Class: 114
+      Script: {instanceID: 12410}
+    - Class: 114
+      Script: {instanceID: 12450}
+    - Class: 114
+      Script: {instanceID: 12606}
+    - Class: 114
+      Script: {instanceID: 12692}
+    - Class: 114
+      Script: {instanceID: 12790}
+    - Class: 114
+      Script: {instanceID: 13038}
+    - Class: 114
+      Script: {instanceID: 13042}
+    - Class: 114
+      Script: {instanceID: 13158}
+    - Class: 114
+      Script: {instanceID: 13254}
+    - Class: 114
+      Script: {instanceID: 13272}
+    - Class: 114
+      Script: {instanceID: 13334}
+    - Class: 114
+      Script: {instanceID: 13352}
+    - Class: 114
+      Script: {instanceID: 13450}
+    - Class: 114
+      Script: {instanceID: 13560}
+    - Class: 114
+      Script: {instanceID: 13584}
+    - Class: 114
+      Script: {instanceID: 13600}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13702}
+    - Class: 114
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 13782}
+    - Class: 114
+      Script: {instanceID: 14014}
+    - Class: 114
+      Script: {instanceID: 14046}
+    - Class: 114
+      Script: {instanceID: 14178}
+    - Class: 114
+      Script: {instanceID: 14224}
+    - Class: 114
+      Script: {instanceID: 14304}
+    - Class: 114
+      Script: {instanceID: 14428}
+    - Class: 114
+      Script: {instanceID: 14476}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/VRKeys.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11220}
+    - Class: 114
+      Script: {instanceID: 11222}
+    - Class: 114
+      Script: {instanceID: 11420}
+    - Class: 114
+      Script: {instanceID: 11448}
+    - Class: 114
+      Script: {instanceID: 11506}
+    - Class: 114
+      Script: {instanceID: 11558}
+    - Class: 114
+      Script: {instanceID: 11586}
+    - Class: 114
+      Script: {instanceID: 11648}
+    - Class: 114
+      Script: {instanceID: 11678}
+    - Class: 114
+      Script: {instanceID: 11724}
+    - Class: 114
+      Script: {instanceID: 11764}
+    - Class: 114
+      Script: {instanceID: 11862}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12214}
+    - Class: 114
+      Script: {instanceID: 12234}
+    - Class: 114
+      Script: {instanceID: 12306}
+    - Class: 114
+      Script: {instanceID: 12336}
+    - Class: 114
+      Script: {instanceID: 12402}
+    - Class: 114
+      Script: {instanceID: 12410}
+    - Class: 114
+      Script: {instanceID: 12450}
+    - Class: 114
+      Script: {instanceID: 12500}
+    - Class: 114
+      Script: {instanceID: 12622}
+    - Class: 114
+      Script: {instanceID: 12736}
+    - Class: 114
+      Script: {instanceID: 12760}
+    - Class: 114
+      Script: {instanceID: 12878}
+    - Class: 114
+      Script: {instanceID: 12942}
+    - Class: 114
+      Script: {instanceID: 13204}
+    - Class: 114
+      Script: {instanceID: 13464}
+    - Class: 114
+      Script: {instanceID: 13516}
+    - Class: 114
+      Script: {instanceID: 13596}
+    - Class: 114
+      Script: {instanceID: 13598}
+    - Class: 114
+      Script: {instanceID: 13662}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13702}
+    - Class: 114
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 13782}
+    - Class: 114
+      Script: {instanceID: 13896}
+    - Class: 114
+      Script: {instanceID: 13992}
+    - Class: 114
+      Script: {instanceID: 14014}
+    - Class: 114
+      Script: {instanceID: 14030}
+    - Class: 114
+      Script: {instanceID: 14134}
+    - Class: 114
+      Script: {instanceID: 14164}
+    - Class: 114
+      Script: {instanceID: 14174}
+    - Class: 114
+      Script: {instanceID: 14178}
+    - Class: 114
+      Script: {instanceID: 14224}
+    - Class: 114
+      Script: {instanceID: 14304}
+    - Class: 114
+      Script: {instanceID: 14322}
+    - Class: 114
+      Script: {instanceID: 14350}
+    - Class: 114
+      Script: {instanceID: 14408}
+    - Class: 114
+      Script: {instanceID: 14416}
+    - Class: 114
+      Script: {instanceID: 14488}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UserPrefab
+  - hash:
+      serializedVersion: 2
+      Hash: 7217128afa2c34f987a3121082f90a02
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Cast
+    className: ParabolicLineCast
+  - hash:
+      serializedVersion: 2
+      Hash: 80d2851602cb4bcb6f559596c5eb955b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerListCell
+  - hash:
+      serializedVersion: 2
+      Hash: bdd75c1195a09c34e872b2941427c44d
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.DestinationLocations
+    className: DestinationLocationFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunTeams
+  - hash:
+      serializedVersion: 2
+      Hash: 3ba511d6778af7ef51aac1b9a1a179fc
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
+    className: GrabInteractableAction
+  - hash:
+      serializedVersion: 2
+      Hash: 74494c459d8da1b3c2f0349d1d8534aa
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: DocLinkButton
+  - hash:
+      serializedVersion: 2
+      Hash: bf93456903f8f0132ccfbe1d462c9c26
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking
+    className: SurfaceLocator
+  - hash:
+      serializedVersion: 2
+      Hash: 9e59cb55c85142a96a08808523bf3eb0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: GameObjectEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: ab039a385ef4459756519a3fe91dccc6
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: SmoothSyncMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 90f740750fb432fede48094a9bb40a06
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Scale
+    className: TransformScale
+  - hash:
+      serializedVersion: 2
+      Hash: 22240e791dbd5a561cf4e7c6652c9d39
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation
+    className: Vector3MagnitudeSetter
+  - hash:
+      serializedVersion: 2
+      Hash: c42672c997f8be6b1aa86a927ebea785
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.DestinationLocations
+    className: DestinationLocationLockedStateTag
+  - hash:
+      serializedVersion: 2
+      Hash: 4f417ca0a3b31b376eb402726c240bde
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RegionListView
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 626925ef558787b2d85c809198164d19
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 7df54f0f69e4b490b39970043c1b540f
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Mutation
+    className: TransformScaleMutator
+  - hash:
+      serializedVersion: 2
+      Hash: a78dae04482ec84aa7d3a9a555a2d50b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.Counter
+    className: GameObjectObservableCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 2163458cae41cb1735c8b06fc34a9582
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: UserIdField
+  - hash:
+      serializedVersion: 2
+      Hash: cb64f59e8d4f44b3b24f83f693569f90
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.SpatialManipulation
+    className: ScaleManipulator
+  - hash:
+      serializedVersion: 2
+      Hash: 6a5d8463a2263d3170e343a6dc5332aa
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: SerializableTypeComponentObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ServerAddressProperty
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: GraphicToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomMaxPlayersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.BodyRepresentation
+    className: BodyRepresentationColliderTag
+  - hash:
+      serializedVersion: 2
+      Hash: 3ba023cd67d72cace33969ab863e0fd4
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonStatsGui
+  - hash:
+      serializedVersion: 2
+      Hash: 4300d9af7b0b02f99c1bf2663ff45019
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: DirectionalDriveFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 8ae3331b163cc121825eeed3975d6c4d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatGui
+  - hash:
+      serializedVersion: 2
+      Hash: 9a83bd141a7bf939e9ab01da7f0be8ce
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: FloatToVector2
+  - hash:
+      serializedVersion: 2
+      Hash: 0031596f60c026f182dcc976632358c0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation
+    className: FloatRangeValueRemapper
+  - hash:
+      serializedVersion: 2
+      Hash: 74c875e0f15c48e0a55f06093aa93e15
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: LayoutElementMatchSize
+  - hash:
+      serializedVersion: 2
+      Hash: 1b1062ec0b6b4ee5fd378809ac77ff08
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Provider
+    className: GrabInteractableStackInteractorProvider
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: EnterKey
+  - hash:
+      serializedVersion: 2
+      Hash: 9517d0bf39002f9b9a065ac34bcbcfb5
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: ListContainsRule
+  - hash:
+      serializedVersion: 2
+      Hash: 1a304e74a63aa7ea3d9300219eee4704
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Haptics
+    className: InteractorHapticsConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 77a5ce679570c14a49885173645e78ea
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: ActionInteractorConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: bd4c580f02d31d4be48d7a47440392c4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerAnimatorManager
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOpenProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2b1d1de79e4d31f1861f586502176c81
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonAnimatorView
+  - hash:
+      serializedVersion: 2
+      Hash: 0fed5f14291c3455fb97c890383f3f0b
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Pointers
+    className: PointerFacadeGameObjectExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: TextToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TextToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: a5781dc71a671b1ad2b38de19f24b71f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 59de95ea0f162782c69cba2f2d24fba0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: Vector2ObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: ButtonInsideScrollList
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CullingHandler
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: EmptyEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 77bbe8a003fbf275a0f09e03c8364184
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: Mallet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 0e2ce2f22060571614715dafd3643e22
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision
+    className: CollisionNotifier
+  - hash:
+      serializedVersion: 2
+      Hash: 60fb902c3bfc0533f4e7b79e5d161e78
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Hub
+    className: DemoHubManager
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: bfff67bff4bd5310b0b005cbb863c92c
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AnyTagRule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 234235b9fb07320d11497e08a726cc56
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 968a3280ef04a84624071bcc8428573d
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.BodyRepresentation
+    className: BodyRepresentationFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 07df56fd083e5472d2d44aa421d99d38
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.UnityXRCameraRig.Input
+    className: UnityAxis1DAction
+  - hash:
+      serializedVersion: 2
+      Hash: b1299c30ced5950d3d7d5d51dcac728e
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.Tooltip
+    className: TooltipConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: b1f26da3046d8b188758169a9d6b1078
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: BezierSpline
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersOnMasterProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 79a120ea0a9fbd921a0720613ce23598
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.InteractableSnapZone
+    className: SnapZoneConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: a9ca0909b260232af152a6062939015d
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: BooleanToFloat
+  - hash:
+      serializedVersion: 2
+      Hash: 267e1e00a8f1d106bd614339db235595
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PunCockpit
+  - hash:
+      serializedVersion: 2
+      Hash: 48de6ec90c5ec771a0105341422915e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Realtime.Demo
+    className: ConnectAndJoinRandomLb
+  - hash:
+      serializedVersion: 2
+      Hash: 4451fe44e46276c9824962142df55819
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: ComponentGameObjectExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: f9654ab2b14c99684549e5ea6fd4992e
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: ComponentEnabledStateModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 7e394d578dea8ffa781cf49e6f9214b9
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Process.Moment
+    className: MomentProcess
+  - hash:
+      serializedVersion: 2
+      Hash: fa4210cee7091576ce4ed7258b598b35
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection
+    className: GameObjectRelations
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: d14b5caca3610ffe26ad6cd89c3b1a34
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.AxisRotator
+    className: AxisRotatorConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: ba160f8fe96116c81151a9a24d7d9f4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RoomListCell
+  - hash:
+      serializedVersion: 2
+      Hash: c87a2744a4fec8052f557862b102c4e4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: FriendListCell
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: Vector2EventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: e7e203b4396ed34c798a5d265e1073fd
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: BehaviourObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: IngameControlPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 5ca114659055ebcf810e743a23998db3
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.AxesToVector3
+    className: AxesToVector3Facade
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 90f740750fb432fede48094a9bb40a06
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Position
+    className: TransformPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 67a84cba6278b54136fb8ffcb7aca2d7
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Provider
+    className: GrabInteractableListInteractorProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 72f0e262cec16c9f4520dc3bf2b81796
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: BezierCurve
+  - hash:
+      serializedVersion: 2
+      Hash: 59861598b569cc2ce5bfc4cb8fdd1357
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: SurfaceChangeAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Hub
+    className: ToDemoHubButton
+  - hash:
+      serializedVersion: 2
+      Hash: 5e8a01a14cef8c5fb6866e39e13545df
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: UnityStandardAssets.Characters.ThirdPerson.PunDemos
+    className: ThirdPersonCharacter
+  - hash:
+      serializedVersion: 2
+      Hash: 11df54cb47bd74c537f3c732a94ea97d
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: daa5bc3897e17251d0b346afa2fb3735
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: AngleToVector2Direction
+  - hash:
+      serializedVersion: 2
+      Hash: 88b1611e53ffd65cfed88476712a689d
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: DirectionModifier
+  - hash:
+      serializedVersion: 2
+      Hash: ffe642add16635217f1d4e6c9827be75
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Process.Moment
+    className: MomentProcessor
+  - hash:
+      serializedVersion: 2
+      Hash: 046d095ff8696299536de2574c882733
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: StringInListRule
+  - hash:
+      serializedVersion: 2
+      Hash: bd3cf68c8964d3c66d1c43f4f98508c9
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: Block
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: cfa743a0d1f6e2eb814922c9d464b126
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.SpatialManipulation
+    className: RotationManipulator
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: SendRateOnSerializeField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: IgnoreInteractorCollisionTag
+  - hash:
+      serializedVersion: 2
+      Hash: 295bcfe4fbf55811d7b942dff8c88b53
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: Vector3ObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: efc7262760d35ea312d874bce27be9c4
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics
+    className: AudioClipHapticPulser
+  - hash:
+      serializedVersion: 2
+      Hash: 5ee90921e69fbbcda2884f650e1b8321
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity.Collection
+    className: VelocityTrackerObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 97754f2053651386be971ec65c9109a9
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: ArtificialVelocityApplier
+  - hash:
+      serializedVersion: 2
+      Hash: 01af2a1ccde6f5a3777877fce1d85576
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TabViewManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: d941ab6dd93d37ffdf2277f2ea2375a0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 9c80efe996101ed2f2acdc43e1a95b5b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: AsteroidsGameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 26cd900708afcd7c79cc986abc81d0ad
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: StringObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 5c9db84e75793292a8a3684736c896db
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AnyComponentTypeRule
+  - hash:
+      serializedVersion: 2
+      Hash: a06e17b49fad8b176473d4f07cde82db
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.DestinationLocations
+    className: DestinationLocation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo
+    className: WebRpcImplementationExample
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1bd8896baa5bad83ba4f6b4b775179b3
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.InteractableSnapZone
+    className: SnapZoneFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 98b1690abf674d1dd44e0577085cc23a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Aggregation
+    className: Vector3Subtractor
+  - hash:
+      serializedVersion: 2
+      Hash: c7a446581b7673aa421382573d6d42c6
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AnyRule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.DestinationLocations
+    className: ActionDispatcher
+  - hash:
+      serializedVersion: 2
+      Hash: eaf039cf4309ffe25561aa6bf714daa7
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Event.Proxy
+    className: CollisionNotifierEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: c03b64ffba4edcc107eeeb98b4a38395
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.TrackedCollider
+    className: TrackedColliderConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 17c99c2f0036853fd23043010b350c0b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 3088dc96f430e8acd5007df0a23ef951
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: Vector2ToAngle
+  - hash:
+      serializedVersion: 2
+      Hash: 0deb7040fee1261ad81dc530757b2788
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active
+    className: CollisionPointContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 0927e41b46e1bd11671f9b5adda4b832
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonRigidbody2DView
+  - hash:
+      serializedVersion: 2
+      Hash: 66541ca71b4fba1344ac590d01704c14
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.Climb
+    className: ClimbVelocityApplier
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractableConsumerContainerExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 1ef3969c3040878cf55d768e77fc2550
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: Vector2ComponentExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnStartDelete
+  - hash:
+      serializedVersion: 2
+      Hash: 5ae36aa27e46b25633847fc7cb6b5c87
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CullArea
+  - hash:
+      serializedVersion: 2
+      Hash: f8e78a3b9ad72259c623087e27fa8428
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: ComponentTrackerProxy
+  - hash:
+      serializedVersion: 2
+      Hash: c0e2d27bb994fd918b71c1d294d8135d
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: DirectionalJointDrive
+  - hash:
+      serializedVersion: 2
+      Hash: b25c2463ba9144686d18d7707733226b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NamePickGui
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractableFacadeExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 24f79094aff162c9aa69c31d64d777d3
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickRpc
+  - hash:
+      serializedVersion: 2
+      Hash: 0cdf1c2671eca4ee349fa4e49be90c5b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Association
+    className: LoadedXrDeviceAssociation
+  - hash:
+      serializedVersion: 2
+      Hash: b5282125181e5b13b8c339378377f8e0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractablePropertyCache
+  - hash:
+      serializedVersion: 2
+      Hash: 482621ef0ce0fcf37e29e5ae70c9f576
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: RotationalJointDrive
+  - hash:
+      serializedVersion: 2
+      Hash: 19cb06a107df830dac6d810870b98bb3
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: VelocityEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunPlayerScores
+  - hash:
+      serializedVersion: 2
+      Hash: fc7b5e7d6c06e2ed584cb9a4e054c79c
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: ConnectAndJoinRandom
+  - hash:
+      serializedVersion: 2
+      Hash: 1aec3137280638278bc9bcbe5b3bc1b3
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PunCockpitEmbed
+  - hash:
+      serializedVersion: 2
+      Hash: ae12829df65cc250cdf068ae8b53a0ed
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Pointer
+    className: PointerElement
+  - hash:
+      serializedVersion: 2
+      Hash: 32c33cf8ff76c86f64cbb1ceb894eecd
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AnyBehaviourEnabledRule
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: ShiftKey
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractableConsumerRigidbodyExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 8fba20d367de35d50deb7c19695dbc61
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Rotation
+    className: RigidbodyForceAtPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 37b0c2e76cad579c4655826713e52332
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig
+    className: ActiveObjectController
+  - hash:
+      serializedVersion: 2
+      Hash: fca36d793af8574ab4369cf94a8d0d09
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics.Collection
+    className: HapticProcessObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb27be807aa299702f28ad0bcad1f46
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: dcb828d92622119b1be8901145dd2ca0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Process.Moment
+    className: CompositeProcess
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables.ComponentTags
+    className: ControllableJointDriveContainerTag
+  - hash:
+      serializedVersion: 2
+      Hash: cc4366fbf9de20ff5d58dff7cc93ec53
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: DirectionalTransformDrive
+  - hash:
+      serializedVersion: 2
+      Hash: 8d56d815d548ac734fd494069afb156b
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: TouchInteractorConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 117e94af12d2e42e9e17b73f2602978e
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: CreateRoomUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: AutoSyncSceneToggle
+  - hash:
+      serializedVersion: 2
+      Hash: b8a5e8091ab0b8861d2add371082c5e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: SpaceKey
+  - hash:
+      serializedVersion: 2
+      Hash: 8e87ce1120e89287327b0af4533f118b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: PlayerManager
+  - hash:
+      serializedVersion: 2
+      Hash: f03e715efc06166652b50734d144ef72
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: VelocityTrackerProcessor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsVisibleToggle
+  - hash:
+      serializedVersion: 2
+      Hash: f838d160147e5b1182ba8b20e890cc86
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: NegationRule
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: fe9209b4337a14bddaae9e0830c0a835
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event
+    className: BehaviourEnabledObserver
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: f8f5c34557f4103b6547d8f956cec6ea
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: PlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: 8e69d62a3f550ae66c76e1271fee60d8
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.UnityXRCameraRig
+    className: UnityXRConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BestRegionInPrefsProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 13f92b17c78a4c3226ff7fcb61bf1fe3
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.CameraRig.Collection
+    className: LinkedAliasAssociationCollectionObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 220942ebd4a8206ceaaadfb26e160163
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig
+    className: TransformPropertyResetter
+  - hash:
+      serializedVersion: 2
+      Hash: cd46b185d8d6f8e2daa8c2832bc4cb15
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.PlayAreaRepresentation
+    className: PlayAreaRepresentationFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 767d713f98caeba9e720bc5a3766d7c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: Keyboard
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPlayerTtlProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 79c8bb3c61b32415a2dcd6f76562a14b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification.Operation.Extraction
+    className: TransformPropertyApplierEventDataExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: d38c3bea8a0865e1d5894fb5ea5905f4
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule.Collection
+    className: RuleContainerObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: BackspaceKey
+  - hash:
+      serializedVersion: 2
+      Hash: 119391f43736672a1054200339bf7d8f
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics
+    className: HapticProcessor
+  - hash:
+      serializedVersion: 2
+      Hash: eaa28f8512d9da701f46530ecb66b033
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Visual
+    className: CameraColorOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: f941c3a384168571b7d90f58ec4986bc
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: InfosPanelPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.CameraRigSwitcher
+    className: XRSettingsConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 7133581702b65be7388ded00e0202d01
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Receiver
+    className: GrabInteractableReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: b796300a34c5fc6acf7491089b3f21a5
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TransformDirectionExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOpenToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 5b3f6f1c50f87343f07304b19fd3dd3c
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: AverageVelocityEstimator
+  - hash:
+      serializedVersion: 2
+      Hash: 0a0b5a12c64300ca8c753d3afcb5770e
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: XRNodeVelocityEstimator
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: FloatEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 9f8417738ea18900ada81dfc51554395
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
+    className: GrabInteractableFollowAction
+  - hash:
+      serializedVersion: 2
+      Hash: 33ad31b724fa2cdb5f695a1d41d3ae05
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: Vector3ToVector2
+  - hash:
+      serializedVersion: 2
+      Hash: 6bafdf6ecb1213a72c6eeee80efda564
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractableFacade
+  - hash:
+      serializedVersion: 2
+      Hash: c8111cd8bec663cfa14aa0d74a554319
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: VelocityMultiplier
+  - hash:
+      serializedVersion: 2
+      Hash: b3ab2106268377ffe25dd18ac23dca28
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: EventSystemSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 57d2b3ca58a430f7cf319bb757c1f0f5
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: PlayerNameInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: PointNormalRotator
+  - hash:
+      serializedVersion: 2
+      Hash: 4422d73e827dea43cd5edcd27353b243
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.SceneConsole
+    className: SceneConsoleFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation.Extraction
+    className: NotifierContainerExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: Controller
+  - hash:
+      serializedVersion: 2
+      Hash: 1158f1e2d61fa9661b5d73694f87fdc8
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Query
+    className: ObscuranceQuery
+  - hash:
+      serializedVersion: 2
+      Hash: 1f79efcdf7666f1ad6f8a3b502d232aa
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Pointer
+    className: ObjectPointer
+  - hash:
+      serializedVersion: 2
+      Hash: 2d294d4206c416d3656fed09aee5ac0c
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier
+    className: FollowModifier
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CloudRegionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: ee84478990d29c6d64a8d3003b44725c
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: PlayerOverviewPanel
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 815eccb43e6d661ca95ea50e332da1b5
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.TrackedCollider
+    className: TrackedColliderFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 773d56635029b2a1cfccb5c2192845c6
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow
+    className: ObjectFollower
+  - hash:
+      serializedVersion: 2
+      Hash: 7602c8d40ade510f4c0e781c7062b246
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChannelSelector
+  - hash:
+      serializedVersion: 2
+      Hash: 14f6e7d5314d3aff9265172f9d1e95a9
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: StatesGui
+  - hash:
+      serializedVersion: 2
+      Hash: 15727fa23f84f1e7558e093d78593dcc
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Position
+    className: RigidbodyVelocity
+  - hash:
+      serializedVersion: 2
+      Hash: 0927e41b46e1bd11671f9b5adda4b832
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonRigidbodyView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IgnoreUiRaycastWhenInactive
+  - hash:
+      serializedVersion: 2
+      Hash: 18d89cb858d0cf8a1f38bb786789eaa7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatAppIdCheckerUI
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: TransformDataProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab242b870223c7cc725ed27e7836c1a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Association.Collection
+    className: GameObjectsAssociationObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 1f2feea55bedf19d47c1619d83f0b6b4
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Visual
+    className: PointsRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PingProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 8f762b532eead71ee431100d5e4ab306
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: Vector2Action
+  - hash:
+      serializedVersion: 2
+      Hash: 11df54cb47bd74c537f3c732a94ea97d
+    assemblyName: PhotonRealtime.dll
+    namespaceName: Photon.Realtime
+    className: ConnectionHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 15936e88d40a588b81740bed9a93d9af
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.InteractableSnapZone
+    className: ActivationValidator
+  - hash:
+      serializedVersion: 2
+      Hash: 2ebcffb5be0ba0840fdce549c503cb1b
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.SpatialManipulation
+    className: PositionManipulator
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: InteractorExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 19c703fb20b3231dbd1a21248e8bb11b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerDetailsController
+  - hash:
+      serializedVersion: 2
+      Hash: f7b614a3ae343c31299e81b7a2ab91b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: HandCollider
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: GameVersionField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: SurfaceDataProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6b8bedbfe64fbfc065bd496759987324
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab
+    className: GrabInteractableConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 259988b2d867e1586634d64379c5ff81
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonTransformView
+  - hash:
+      serializedVersion: 2
+      Hash: 0246cbdbb0ebec8fff7e9086e521e314
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: GameObjectRelationObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 661d3be649bd0600841fdb6556dba3fd
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation
+    className: NearestSorter
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPropertiesListedInLobbyProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 297c8ed95f31f38bac90a25f1059a350
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Cast
+    className: StraightLineCast
+  - hash:
+      serializedVersion: 2
+      Hash: 2bca23b9ffe30776f859becc36d76089
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow
+    className: ObjectDistanceComparator
+  - hash:
+      serializedVersion: 2
+      Hash: c2b9c175b9205104bb915437c9c8e5a2
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Pointers
+    className: PointerFacade
+  - hash:
+      serializedVersion: 2
+      Hash: c0c4a699432cb76edf3aa1e322a6db54
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: AllAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StopGrabbingTag
+  - hash:
+      serializedVersion: 2
+      Hash: d329540117e6b6c523bded68046af505
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PropertyListenerBase
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BackgroundTimeOutField
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersInRoomProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: StringInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 4fdfe530ffd5f502ce72adb104fc64e2
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Event.Proxy
+    className: ActiveCollisionsContainerEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: f78cf8a645b6baaac9cc157d6eb292ec
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Aggregation
+    className: FloatMultiplier
+  - hash:
+      serializedVersion: 2
+      Hash: 3ba511d6778af7ef51aac1b9a1a179fc
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
+    className: GrabInteractableSwapAction
+  - hash:
+      serializedVersion: 2
+      Hash: a509650020474e8c2a343581439c27d2
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.AxesToVector3
+    className: AxesToVector3Processor
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsVisibleProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomEmptyRoomTtlProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: bc5017fa784ab3e286779ac6b1f8d958
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: Vector2ToVector3
+  - hash:
+      serializedVersion: 2
+      Hash: e3f42509bf72ec79e74ff61ab765f340
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: GameObjectStateMirror
+  - hash:
+      serializedVersion: 2
+      Hash: c0c4a699432cb76edf3aa1e322a6db54
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: AnyAction
+  - hash:
+      serializedVersion: 2
+      Hash: f84d945e5e1ca985698660fc26e9657f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: Key
+  - hash:
+      serializedVersion: 2
+      Hash: d9aa52c5a283a9b8a790e55c0dee9ccf
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RegionListCell
+  - hash:
+      serializedVersion: 2
+      Hash: 211a16c9f221cabde993c863bf6b3806
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Velocity
+    className: VelocityApplier
+  - hash:
+      serializedVersion: 2
+      Hash: 4bdc76d93857e2a94a6cd56a97090e67
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule.Collection
+    className: RulesMatcherElementObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IsConnectedProperty
+  - hash:
+      serializedVersion: 2
+      Hash: fcd5c2a8b86480b7173bbcf5ed25e524
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: HiddenRegion
+  - hash:
+      serializedVersion: 2
+      Hash: 021cbbc089ea38037d65d0f072d770c0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab
+    className: InteractableGrabStateEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 23d98efc145b1081fdecd8f309db521f
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: ServerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: GameVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 12a838849798e429e26b27be7b1889bd
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.AxisRotator
+    className: AxisRotatorFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 4a4827fc70910078a2cb5b1c64cd6499
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics
+    className: AudioSourceHapticPulser
+  - hash:
+      serializedVersion: 2
+      Hash: c380fc5ce39348202e0a58fe3e243a74
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: cd6d03f9fdf66c9c022a09e86769b638
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Event.Proxy
+    className: Vector3EventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: SetRoomCustomPropertyUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: 4fe8955e1c662935371b0936cafbb89b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: TextButtonTransition
+  - hash:
+      serializedVersion: 2
+      Hash: 62dcf3eb853443e0de607e5eab6f7878
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active
+    className: ActiveCollisionsContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 0f1d08ce066a9441b8ebaadaab5d787d
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action.Collection
+    className: ActionRegistrarSourceObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 4fe8955e1c662935371b0936cafbb89b
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TextButtonTransition
+  - hash:
+      serializedVersion: 2
+      Hash: e37675de1ea5e56da90f5600d33587bd
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ToggleExpand
+  - hash:
+      serializedVersion: 2
+      Hash: d50c3f33d57e5b5496b3e405fc382e4b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: RulesMatcher
+  - hash:
+      serializedVersion: 2
+      Hash: 35510e89a64fbf211496144bae2f484e
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: FloatAction
+  - hash:
+      serializedVersion: 2
+      Hash: 8bfb2d9c9e4b98061d3b0a7c96587348
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.MovementAmplifier
+    className: MovementAmplifierFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 09eca56b9b080521b49b59b92c126ac9
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.PlayAreaRepresentation
+    className: PlayAreaRepresentationConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 534955d43f520b4316abdfbd29b8a76a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: SurfaceDataCollisionPointExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 5c3f07d871a6f1f9a3cb71c92b1becf5
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Teleporters
+    className: TeleporterConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: NickNameField
+  - hash:
+      serializedVersion: 2
+      Hash: 89dd43f00aeec6b685242f1c5366b1f7
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: UnityObjectObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: dd677f14ff2f4a095c717b2fe1f83b76
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: RotationalDriveFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 4d9f3379d9846c3f857ff61792c5ee3b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 141b6f284a4e8bc6ca482dc3556f287a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Association
+    className: GameObjectsAssociationActivator
+  - hash:
+      serializedVersion: 2
+      Hash: 229827561222db1f4e766a3eb65da2a8
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig
+    className: SimulatorConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 0a64177d608477efba10c067e6b3bf24
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Rotation
+    className: RigidbodyAngularVelocity
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: LoadLevelUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: 259cddf8fede19ebbd5554f20d50358d
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.SpatialManipulation
+    className: SpatialManipulatorFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 54434edb87ea289b9f440209b57de750
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.MovementAmplifier
+    className: MovementAmplifierConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PointedAtGameObjectInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 9e59cb55c85142a96a08808523bf3eb0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: InteractorFacadeEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 37b66d97ccef5607e80037acafe51b3b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: SplineWalker
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 363c649aa7deda919f9b2d0c729efa20
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TransformPositionExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: c9a8b80298a116835b51ba1cf9284367
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 78be31fccf9db6061d6b16173412fe1f
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Query
+    className: FacingQuery
+  - hash:
+      serializedVersion: 2
+      Hash: 92b8fbb1b8e53469d7549c58a3fe58fe
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: LobbyMainPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 35a9693c388776aaf487636491a20f11
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: Cluster
+  - hash:
+      serializedVersion: 2
+      Hash: e1300922cc039f41ab46a47f4cb05898
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 76d6b62dc8f2b03086e6851bc8aea0d8
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: TransformPropertyApplier
+  - hash:
+      serializedVersion: 2
+      Hash: 6a5d8463a2263d3170e343a6dc5332aa
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: SerializableTypeBehaviourObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 68d2358dcd0713bae2f163f51ffba199
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision
+    className: CollisionTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 6ee14e03af17a61e7104e4ff754feba5
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: ActionRegistrar
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: AppVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: b4e7db8026eb599b98398540d8028742
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics
+    className: XRNodeHapticPulser
+  - hash:
+      serializedVersion: 2
+      Hash: ae1347d9113eee8b83c5c8047dcf31a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FriendItem
+  - hash:
+      serializedVersion: 2
+      Hash: 0982807d60fb3884d51d4baa9fdc156c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: c1933cc0a2f4ff6eb13333347497beb3
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e1e615eaf73e560828f53edc8952e615
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunTurnManager
+  - hash:
+      serializedVersion: 2
+      Hash: 42511b380cb21bf0c5b5a743f8bbe792
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig
+    className: KeyBindingDisplay
+  - hash:
+      serializedVersion: 2
+      Hash: e4316571779021b969790af4a77452dd
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: RoomListEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StartActionTag
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ServerProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 3196faedf18beceaf42ddb861780ce08
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.Collection
+    className: InteractorFacadeObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: d2a2698b314a20912af1eb2b1758dc90
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PropertyCell
+  - hash:
+      serializedVersion: 2
+      Hash: 8a710212b2b883f6c4b9fa3a8d49dbea
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Mutation
+    className: TransformPositionMutator
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: SendRateField
+  - hash:
+      serializedVersion: 2
+      Hash: c98b75f66fb089f264cea22a0a30c448
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation
+    className: Vector3Restrictor
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomNameProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 32f8aa17c8c80321b4c28ac9073a84b3
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RoomListView
+  - hash:
+      serializedVersion: 2
+      Hash: 0004e6414b5a10aa71d861498c105797
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Utility
+    className: CountdownTimer
+  - hash:
+      serializedVersion: 2
+      Hash: 1bbce36c26e06daa73238c07c42b2bc9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: CameraWork
+  - hash:
+      serializedVersion: 2
+      Hash: 7e73277238ee8c04d76a601e04d9ae7f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: InteractorFacade
+  - hash:
+      serializedVersion: 2
+      Hash: e10400e84c8c573b2b5e4088aca77453
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1776a012a5fa9aaa82fea9037413bbec
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Helpers.Tooltip
+    className: TooltipFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 072ce9c723d435f341effa60512fb39c
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation
+    className: OrderReverser
+  - hash:
+      serializedVersion: 2
+      Hash: 4cf979ef2061790b7f65ca43b5109d55
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: GameObjectStateSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 41d9382199df04036ef5c9032fd90705
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.CameraRig
+    className: LinkedAliasAssociationCollection
+  - hash:
+      serializedVersion: 2
+      Hash: a8d3c943d9168cbdd8596f040ff02ff4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Asteroid
+  - hash:
+      serializedVersion: 2
+      Hash: 9c98f0cc584f19f41bb4d006ce913975
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: ActiveInHierarchyRule
+  - hash:
+      serializedVersion: 2
+      Hash: 7829e932aec962afd9bcfad28ffff27d
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnJoinedInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: d7f7bc402888d42a0dbb080693e6863c
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: LoaderAnime
+  - hash:
+      serializedVersion: 2
+      Hash: 1dd6d155303c234d25f4e513809ccf4e
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: GameObjectObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 8001a5f7502aab37e42206da015e6914
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 22ac56c311dfe82323f5014ae514e09f
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Rotation
+    className: TransformPositionDifferenceRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 7221ab9307aaa6b66a416e2e4561f420
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ScoreHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 3933cbb0efbb9fb1f852dc891eeebcd0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors
+    className: GrabInteractorConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StopActionTag
+  - hash:
+      serializedVersion: 2
+      Hash: a1c9776e292acc102049dab22f8e048a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: DemoScene
+  - hash:
+      serializedVersion: 2
+      Hash: e80cf4684910fdd7f091d85a19a93603
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: SlotLanes
+  - hash:
+      serializedVersion: 2
+      Hash: a7a8a2bce583d2ab753482c77c0fe6af
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: FloatToVector3
+  - hash:
+      serializedVersion: 2
+      Hash: c6f61866634adbfb258590f2792e7a98
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation
+    className: GameObjectCloner
+  - hash:
+      serializedVersion: 2
+      Hash: c7a446581b7673aa421382573d6d42c6
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AllRule
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IntInputField
+  - hash:
+      serializedVersion: 2
+      Hash: f336e086360abe49a3323e5f1583c35a
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 907d685addf43768a22f55bfe8caadf9
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Cast
+    className: FixedLineCast
+  - hash:
+      serializedVersion: 2
+      Hash: 5421466ed6291c1ab2d1650a128005b2
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonLagSimulationGui
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: EventSystemSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: e90daabce256e21953534ec5ca23a970
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Pointer.Operation.Mutation
+    className: PointerElementPropertyMutator
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 671820220a850a9c744c937ee54460f8
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Mutation
+    className: RigidbodyPropertyMutator
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: ClearKey
+  - hash:
+      serializedVersion: 2
+      Hash: 5451a59b10a21f1ee2d1f993582860f0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: CameraObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 98b1690abf674d1dd44e0577085cc23a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Aggregation
+    className: Vector3Multiplier
+  - hash:
+      serializedVersion: 2
+      Hash: 48804c7edfd2998cdab1bf456d8dbfd0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerListView
+  - hash:
+      serializedVersion: 2
+      Hash: c549f6d02b2f5176f68243fef11977cf
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Cast
+    className: PhysicsCast
+  - hash:
+      serializedVersion: 2
+      Hash: 747e0726e1bec109ba49208e106c41a5
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.Stack
+    className: GameObjectObservableStack
+  - hash:
+      serializedVersion: 2
+      Hash: 23b3595a8dcb02023b32480b0f72daa9
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.CameraRig.Operation.Extraction
+    className: PlayAreaDimensionsExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: fbe06e5be5d3af7ba5bc78b20e4c448f
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Operation.Extraction
+    className: ObjectDistanceComparatorEventDataExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 45be7c9c443c8d156084fae60067948f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Pointers
+    className: PointerFacadeComponentGameObjectExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: c008f61d8fbb9af0bd4f64390121cc42
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.InteractableSnapZone
+    className: SnapZoneActivator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: ProceduralController
+  - hash:
+      serializedVersion: 2
+      Hash: f355a5f797948b860e3e37cc53343064
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision
+    className: CollisionIgnorer
+  - hash:
+      serializedVersion: 2
+      Hash: 1d685fe124fe274f4781ca9699192cde
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Modification
+    className: PinchScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation.Extraction
+    className: NotifierTargetExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 638523fc4799dbdf41d5c9ac88309852
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Climb
+    className: ClimbInteractableFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 9e59cb55c85142a96a08808523bf3eb0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables
+    className: InteractableFacadeEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: bc9580b6c93df7ca8e551fdaa31d3f0a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Collection.List
+    className: FloatObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 1abfd1cd953a909f8d7edb031f425657
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.AxesToVector3
+    className: Vector3Cache
+  - hash:
+      serializedVersion: 2
+      Hash: c5fd97cc10b89deaf7c60af66a6b0d5a
+    assemblyName: PhotonRealtime.dll
+    namespaceName: Photon.Realtime
+    className: SupportLogger
+  - hash:
+      serializedVersion: 2
+      Hash: 1f4c2bfd694d98d3a0eb67ef38d81e79
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.InteractorVisibilityModifier
+    className: InteractorVisibilityModifierFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 3f600ad0f750f59238a91f7513b927c1
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonTransformViewClassic
+  - hash:
+      serializedVersion: 2
+      Hash: 363c649aa7deda919f9b2d0c729efa20
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TransformScaleExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CrcCheckToggle
+  - hash:
+      serializedVersion: 2
+      Hash: b521fd99dd9478100ae35f10432080b1
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.TrackedAlias
+    className: TrackedAliasConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: fd3349896f14ec38c7e493f7aaa12007
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
+    className: GrabInteractableControlDirectionAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnPointerOverTooltip
+  - hash:
+      serializedVersion: 2
+      Hash: 516aa998d41f606b49b7e76a6230ec5d
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Cast.Operation.Mutation
+    className: PointsCastPropertyMutator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: OnStartDelete
+  - hash:
+      serializedVersion: 2
+      Hash: c60b09ed8cd59996a16a7d6449997ee1
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation
+    className: Slicer
+  - hash:
+      serializedVersion: 2
+      Hash: 615941f1fcd1439553b68b0547ebd3e0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Operation.Extraction
+    className: PublisherContainerExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 90f740750fb432fede48094a9bb40a06
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Follow.Modifier.Property.Rotation
+    className: TransformRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 00c99ff3f40bd11590c670580e513825
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonTeamsManager
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IsConnectedAndReadyProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 8535188def2f4988c4c42606e4b5b391
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Haptics
+    className: InteractorHapticsFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 120a172a5d726be048c7bcd066d6c7be
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig.Input
+    className: MouseVector2DAction
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 45b6edf4c1c1802a63101441c2b0d990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: CancelKey
+  - hash:
+      serializedVersion: 2
+      Hash: 1b26fea0b3a7ee864c46458d1a61e800
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active
+    className: ActiveCollisionConsumer
+  - hash:
+      serializedVersion: 2
+      Hash: accca183cd593906a396623b9c25f66b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Aggregation
+    className: Vector2Multiplier
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 7fa31cb47bd639494f81b7024faee1f5
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Touch
+    className: TouchInteractableConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: c64811138f5bf3be7ff7410f73fb7fdf
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: Vector3ToFloat
+  - hash:
+      serializedVersion: 2
+      Hash: 13e69442f81c731651e4e42e52585152
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Movement.Climb
+    className: ClimbFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 2b53d93770b9036b2fd1c7854560bc69
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: MoveByKeys
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnEscapeQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerNameInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 133997768ea3e098451c58f7a67ee6bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: Placement
+  - hash:
+      serializedVersion: 2
+      Hash: 1321e2f40dec122ca53086e36a18203a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TransformDataGameObjectExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: c1adfb73f1ebc233044d917f496ca5a7
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: ToggleAction
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomMasterClientIdProperty
+  - hash:
+      serializedVersion: 2
+      Hash: db0dbcbf70945501e9a0445cd390f627
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Process
+    className: EventProcess
+  - hash:
+      serializedVersion: 2
+      Hash: 6e2e21958a7e3b44a8fc9f9e693d7364
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action.Collection
+    className: ActionObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: b779103b49844a67c7b52f9572b2eaf0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.UnityXRCameraRig.Input
+    className: UnityButtonAction
+  - hash:
+      serializedVersion: 2
+      Hash: e90137b14c2644736d5abeafc2b26c9a
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: OnlineDocButton
+  - hash:
+      serializedVersion: 2
+      Hash: 92215ab982042368416aad9ff838fb07
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.SimulatedCameraRig
+    className: SimulatorFacade
+  - hash:
+      serializedVersion: 2
+      Hash: d113dbcbfc9f38b836edc58d74abf985
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRKeys
+    className: LetterKey
+  - hash:
+      serializedVersion: 2
+      Hash: ea4e73561703f90fbdc820af646becad
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: SlotRacerSplashScreen
+  - hash:
+      serializedVersion: 2
+      Hash: d1f07c9e64b7817e6271f80bb03de25f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4c0ebd9e77f5bc0558d19d8313e54bb9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: SplinePosition
+  - hash:
+      serializedVersion: 2
+      Hash: a620c431ca716d819b0f6f6626066ce8
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.BodyRepresentation
+    className: BodyRepresentationProcessor
+  - hash:
+      serializedVersion: 2
+      Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: b89ca8c8ae7041500fa1df2b061f55c9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: Line
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomAutoCleanupProperty
+  - hash:
+      serializedVersion: 2
+      Hash: b5018c5feeeedbcd2978bd4373874bef
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.UnityXRCameraRig.Input
+    className: UnityAxis2DAction
+  - hash:
+      serializedVersion: 2
+      Hash: 4253f90fce16206079e9e11db7ec3f05
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TimeComponentExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: d4ac1f1e29032db3ec1d611e6f479bf6
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.Teleporters
+    className: TeleporterFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 1681b50fda03adbcfafda61fbd5cd1bc
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: FriendListView
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPlayerCountProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 8174fa23231db6c931bd5407dfa4c300
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active
+    className: ActiveCollisionPublisher
+  - hash:
+      serializedVersion: 2
+      Hash: 9e59cb55c85142a96a08808523bf3eb0
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Tracking.Collision.Active.Event.Proxy
+    className: ActiveCollisionConsumerEventProxyEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6e94ae6dce9add4548d5e152eccb22ea
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonView
+  - hash:
+      serializedVersion: 2
+      Hash: 596dfcb399175f0a5694af2f0d499a48
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab
+    className: InteractableGrabStateRegistrar
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: c64811138f5bf3be7ff7410f73fb7fdf
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: Vector2ToFloat
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: OfflineModeProperty
+  - hash:
+      serializedVersion: 2
+      Hash: f78cf8a645b6baaac9cc157d6eb292ec
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Aggregation
+    className: FloatAdder
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: c1adfb73f1ebc233044d917f496ca5a7
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: BooleanAction
+  - hash:
+      serializedVersion: 2
+      Hash: a7a7d967abd615eca7d39d2624c51f71
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Rule
+    className: AnyLayerRule
+  - hash:
+      serializedVersion: 2
+      Hash: 8649814970b42d345b89944b862453cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: UnityStandardAssets.Characters.ThirdPerson.PunDemos
+    className: ThirdPersonUserControl
+  - hash:
+      serializedVersion: 2
+      Hash: 55c5d4231b5b81f8762aca1b7e16819e
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: PlayerListEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 270c259548ad2ec1dd0eeaf8b36d351b
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Type.Transformation.Conversion
+    className: FloatToBoolean
+  - hash:
+      serializedVersion: 2
+      Hash: 87207d40b89ca632396b05b3cb1e69b0
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PlayerNumbering
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 05a740cc42a3d445908bb1e6cc789b71
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Climb
+    className: ClimbInteractableConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 363c649aa7deda919f9b2d0c729efa20
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Extraction
+    className: TransformEulerRotationExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomExpectedUsersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOfflineProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 08113d888c481bbc38ffd2c5c2c1e18a
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Process.Moment.Collection
+    className: MomentProcessObservableList
+  - hash:
+      serializedVersion: 2
+      Hash: 54730292ba524f4f4d97d2ab52d73a39
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Controllables
+    className: RotationalTransformDrive
+  - hash:
+      serializedVersion: 2
+      Hash: 2152b102d2557c5ee82f82a5b62789fa
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Data.Operation.Mutation
+    className: TransformEulerRotationMutator
+  - hash:
+      serializedVersion: 2
+      Hash: 1a1be53569dc9ca929692bdfe356f0e4
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Locomotion.DestinationLocations
+    className: DestinationLocationConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StartGrabbingTag
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: c6cbd499646dd37d833339ebe46ad898
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: Vector3Action
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: e4aa02db6487ad3aebb8e2f22ee6b699
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: WorldGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: ee853cdea551598dcf20ec3e2d9812f3
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Haptics
+    className: TimedHapticProcess
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StartTouchingTag
+  - hash:
+      serializedVersion: 2
+      Hash: 9bd396bc9fc24f78f19a7ec64fd80ad9
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.CameraRig.TrackedAlias
+    className: TrackedAliasFacade
+  - hash:
+      serializedVersion: 2
+      Hash: 55fd795e51da61232a17e9ce0af59f52
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Spaceship
+  - hash:
+      serializedVersion: 2
+      Hash: 682d4da29621f1e31a31c1d5930918e6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: ConnectToRegionUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: 369ac75bccabec8d42a4da128cec94bd
+    assemblyName: Zinnia.Runtime.dll
+    namespaceName: Zinnia.Action
+    className: StateEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 25d06a1267c2cd9d5eb4d34b597d94a0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Pointers
+    className: PointerConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: 5f4d6e57084c42d31cf00600fe2c939d
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BoolInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.SJTU.PhotonVRKeys
+    className: UserPrefab
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 9805f7a3e230af997c3df7e82956abe0
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
+    className: GrabInteractableScaleAction
+  - hash:
+      serializedVersion: 2
+      Hash: 46a296a078af6e2a02857aa18e9cdf2b
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CountdownTimer
+  - hash:
+      serializedVersion: 2
+      Hash: 491877540590e03bc0107ec60a521be4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfRoomsProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRTK.Prefabs.Runtime.dll
+    namespaceName: VRTK.Prefabs.Interactions.Interactors.ComponentTags
+    className: StopTouchingTag
+  - hash:
+      serializedVersion: 2
+      Hash: f0c4eb24258257daca58a9939f0894d2
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: LobbyTopPanel
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  platform: 5
+  scenePathNames:
+  - Assets/Scenes/Launcher.unity
+  - Assets/Scenes/VRKeys.unity
+  playerPath: "C:/Users/XYC/Desktop/\u7814/Photon/photon_vrkeys_practice/photon_vrkeys_practice.exe"

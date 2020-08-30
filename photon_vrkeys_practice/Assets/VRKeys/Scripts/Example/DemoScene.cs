@@ -12,132 +12,227 @@ using UnityEngine;
 using System;
 using System.Text.RegularExpressions;
 using System.Collections;
+using Photon.Pun;
+using Com.SJTU.PhotonVRKeys;
 
-namespace VRKeys {
+namespace VRKeys
+{
 
-	/// <summary>
-	/// Example use of VRKeys keyboard.
-	/// </summary>
-	public class DemoScene : MonoBehaviour {
+    /// <summary>
+    /// Example use of VRKeys keyboard.
+    /// </summary>
+    public class DemoScene : MonoBehaviourPunCallbacks, IPunObservable
+    {
 
-		/// <summary>
-		/// Reference to the VRKeys keyboard.
-		/// </summary>
-		public Keyboard keyboard;
+        /// <summary>
+        /// Reference to the VRKeys keyboard.
+        /// </summary>
+        public Keyboard keyboard;
 
-		/// <summary>
-		/// See the following for why this is so convoluted:
-		/// http://referencesource.microsoft.com/#System.ComponentModel.DataAnnotations/DataAnnotations/EmailAddressAttribute.cs,54
-		/// http://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/
-		/// </summary>
-		private Regex emailValidator = new Regex (@"^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$", RegexOptions.IgnoreCase);
+        //public GameObject canvasChild;
+        //public GameObject keyboardChild;
 
-		/// <summary>
-		/// Show the keyboard with a custom input message. Attaching events dynamically,
-		/// but you can also use the inspector.
-		/// </summary>
-		private void OnEnable () {
-			// Automatically creating camera here to show how
-			GameObject camera = new GameObject ("Main Camera");
+        /// <summary>
+        /// See the following for why this is so convoluted:
+        /// http://referencesource.microsoft.com/#System.ComponentModel.DataAnnotations/DataAnnotations/EmailAddressAttribute.cs,54
+        /// http://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/
+        /// </summary>
+        private Regex emailValidator = new Regex(@"^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$", RegexOptions.IgnoreCase);
+
+        //private bool isUpdating = false;
+
+        //private string receivedText;
+
+        /// <summary>
+        /// Show the keyboard with a custom input message. Attaching events dynamically,
+        /// but you can also use the inspector.
+        /// </summary>
+        private void OnEnable()
+        {
+            // Automatically creating camera here to show how
+            /*GameObject camera = new GameObject ("Main Camera");
 			Camera cam = camera.AddComponent<Camera> ();
 			cam.nearClipPlane = 0.1f;
-			camera.AddComponent<AudioListener> ();
+			camera.AddComponent<AudioListener> ();*/
 
-			// Improves event system performance
-			Canvas canvas = keyboard.canvas.GetComponent<Canvas> ();
-			canvas.worldCamera = cam;
+            // Improves event system performance
+            Canvas canvas = keyboard.canvas.GetComponent<Canvas>();
+            //canvas.worldCamera = cam;
 
-			keyboard.Enable ();
-			keyboard.SetPlaceholderMessage ("Please enter your email address");
+            keyboard.Enable();
+            /*if (!photonView.IsMine)
+            {
+                canvasChild.SetActive(false);
+                keyboardChild.SetActive(false);
+            }*/
 
-			keyboard.OnUpdate.AddListener (HandleUpdate);
-			keyboard.OnSubmit.AddListener (HandleSubmit);
-			keyboard.OnCancel.AddListener (HandleCancel);
-		}
+            keyboard.SetPlaceholderMessage("Please enter your email address");
 
-		private void OnDisable () {
-			keyboard.OnUpdate.RemoveListener (HandleUpdate);
-			keyboard.OnSubmit.RemoveListener (HandleSubmit);
-			keyboard.OnCancel.RemoveListener (HandleCancel);
+            keyboard.OnUpdate.AddListener(HandleUpdate);
+            keyboard.OnSubmit.AddListener(HandleSubmit);
+            keyboard.OnCancel.AddListener(HandleCancel);
+        }
 
-			keyboard.Disable ();
-		}
+        private void OnDisable()
+        {
+            keyboard.OnUpdate.RemoveListener(HandleUpdate);
+            keyboard.OnSubmit.RemoveListener(HandleSubmit);
+            keyboard.OnCancel.RemoveListener(HandleCancel);
 
-		/// <summary>
-		/// Press space to show/hide the keyboard.
-		///
-		/// Press Q for Qwerty keyboard, D for Dvorak keyboard, and F for French keyboard.
-		/// </summary>
-		private void Update () {
-			if (Input.GetKeyDown (KeyCode.Space)) {
-				if (keyboard.disabled) {
-					keyboard.Enable ();
-				} else {
-					keyboard.Disable ();
-				}
-			}
+            keyboard.Disable();
+        }
 
-			if (keyboard.disabled) {
-				return;
-			}
+        /*private void Start()
+        {
+            PhotonNetwork.SerializationRate = 2;
+            PhotonNetwork.SendRate = 4;
+            if (!photonView.IsMine)
+            {
+                keyboard.keysParent.gameObject.SetActive(false);
+            }
+        }*/
 
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				keyboard.SetLayout (KeyboardLayout.Qwerty);
-			} else if (Input.GetKeyDown (KeyCode.X)) {
-				keyboard.SetLayout (KeyboardLayout.French);
-			} else if (Input.GetKeyDown (KeyCode.C)) {
-				keyboard.SetLayout (KeyboardLayout.Dvorak);
-			}
-		}
+        /// <summary>
+        /// Press space to show/hide the keyboard.
+        ///
+        /// Press Q for Qwerty keyboard, D for Dvorak keyboard, and F for French keyboard.
+        /// </summary>
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (keyboard.disabled)
+                {
+                    Debug.Log("keyboard.Enable() in DemoScene.cs");
+                    keyboard.Enable();
+                }
+                else
+                {
+                    keyboard.Disable();
+                }
+            }
 
-		/// <summary>
-		/// Hide the validation message on update. Connect this to OnUpdate.
-		/// </summary>
-		public void HandleUpdate (string text) {
-			keyboard.HideValidationMessage ();
-		}
+            if (keyboard.disabled)
+            {
+                return;
+            }
 
-		/// <summary>
-		/// Validate the email and simulate a form submission. Connect this to OnSubmit.
-		/// </summary>
-		public void HandleSubmit (string text) {
-			keyboard.DisableInput ();
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                keyboard.SetLayout(KeyboardLayout.Qwerty);
+            }
+            else if (Input.GetKeyDown(KeyCode.X))
+            {
+                keyboard.SetLayout(KeyboardLayout.French);
+            }
+            else if (Input.GetKeyDown(KeyCode.C))
+            {
+                keyboard.SetLayout(KeyboardLayout.Dvorak);
+            }
+        }
 
-			if (!ValidateEmail (text)) {
-				keyboard.ShowValidationMessage ("Please enter a valid email address");
-				keyboard.EnableInput ();
-				return;
-			}
+        /// <summary>
+        /// Hide the validation message on update. Connect this to OnUpdate.
+        /// </summary>
+        public void HandleUpdate(string text)
+        {
+            keyboard.HideValidationMessage();
 
-			StartCoroutine (SubmitEmail (text));
-		}
+            //isUpdating = true;
 
-		public void HandleCancel () {
-			Debug.Log ("Cancelled keyboard input!");
-		}
+            //HiddenRegion.HiddenRegionInstance.GetComponent<HiddenRegion>().SetText(keyboard.text);
+        }
 
-		/// <summary>
-		/// Pretend to submit the email before resetting.
-		/// </summary>
-		private IEnumerator SubmitEmail (string email) {
-			keyboard.ShowInfoMessage ("Sending lots of spam, please wait... ;)");
+        /// <summary>
+        /// Validate the email and simulate a form submission. Connect this to OnSubmit.
+        /// </summary>
+        public void HandleSubmit(string text)
+        {
+            keyboard.DisableInput();
 
-			yield return new WaitForSeconds (2f);
+            if (!ValidateEmail(text))
+            {
+                keyboard.ShowValidationMessage("Please enter a valid email address");
+                keyboard.EnableInput();
+                return;
+            }
 
-			keyboard.ShowSuccessMessage ("Lots of spam sent to " + email);
+            StartCoroutine(SubmitEmail(text));
+        }
 
-			yield return new WaitForSeconds (2f);
+        public void HandleCancel()
+        {
+            Debug.Log("Cancelled keyboard input!");
+        }
 
-			keyboard.HideSuccessMessage ();
-			keyboard.SetText ("");
-			keyboard.EnableInput ();
-		}
+        /// <summary>
+        /// Pretend to submit the email before resetting.
+        /// </summary>
+        private IEnumerator SubmitEmail(string email)
+        {
+            keyboard.ShowInfoMessage("Sending lots of spam, please wait... ;)");
 
-		private bool ValidateEmail (string text) {
-			if (!emailValidator.IsMatch (text)) {
-				return false;
-			}
-			return true;
-		}
-	}
+            yield return new WaitForSeconds(2f);
+
+            keyboard.ShowSuccessMessage("Lots of spam sent to " + email);
+
+            yield return new WaitForSeconds(2f);
+
+            keyboard.HideSuccessMessage();
+            keyboard.SetText("");
+            keyboard.EnableInput();
+        }
+
+        private bool ValidateEmail(string text)
+        {
+            if (!emailValidator.IsMatch(text))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        #region IPunObservable implementation
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                //if (isUpdating)
+                //{
+                //Debug.Log("'stream.SendNext(keyboard.text)' in DemoScene.cs");
+
+                //PhotonNetwork.SerializationRate = 2;
+                //PhotonNetwork.SendRate = 4;
+
+                // We own this user: send the others our data
+                stream.SendNext(keyboard.text);
+                //stream.SendNext(_placeholder.text);
+                //stream.SendNext(_validationNotice.text);
+                //stream.SendNext(_infoNotice.text);
+                //stream.SendNext(_successNotice.text);
+
+                //isUpdating = false;
+                //}
+            }
+            else
+            {
+                //Debug.Log("'keyboard.SetText((string)stream.ReceiveNext());' in DemoScene.cs");
+                string receivedText = (string)stream.ReceiveNext();
+
+                GameObject[] userPrefabs = GameObject.FindGameObjectsWithTag("Player");
+                if (userPrefabs != null && userPrefabs.Length > 0)
+                {
+                    foreach (GameObject userPrefab in userPrefabs)
+                    {
+                        // Network user, receive data
+                        userPrefab.GetComponentInChildren<Keyboard>().SetText(receivedText);
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+    }
 }
