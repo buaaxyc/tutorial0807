@@ -17,8 +17,6 @@ ScriptsOnlyBuild:
     - VRKeys.Mallet
     - VRKeys.ShiftKey
     - VRKeys.SpaceKey
-    Malimbe.FodyRunner.UnityIntegration.dll:
-    - Malimbe.FodyRunner.UnityIntegration.InspectorEditor
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
