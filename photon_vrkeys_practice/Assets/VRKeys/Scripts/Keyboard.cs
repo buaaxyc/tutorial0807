@@ -265,14 +265,17 @@ namespace VRKeys
         /// Set the text value all at once.
         /// </summary>
         /// <param name="txt">New text value.</param>
-        public void SetText(string txt)
+        public void SetText(string txt, bool sync = false)
         {
             text = txt;
 
             UpdateDisplayText();
             PlaceholderVisibility();
 
-            OnUpdate.Invoke(text);
+            if (!sync)
+            {
+                OnUpdate.Invoke(text);
+            }
         }
 
         /// <summary>

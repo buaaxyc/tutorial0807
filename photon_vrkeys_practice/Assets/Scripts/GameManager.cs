@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 using Photon.Pun;
 using Photon.Realtime;
+using VRKeys;
 
 namespace Com.SJTU.PhotonVRKeys
 {
@@ -42,7 +43,7 @@ namespace Com.SJTU.PhotonVRKeys
                 // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
                 localInstance = PhotonNetwork.Instantiate(this.userPrefab.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
                 //PhotonNetwork.Instantiate(this.VRKeys.name, new Vector3(10f, 0f, 0f), Quaternion.identity, 0);
-
+                //localInstance.name += " of " + localInstance.GetComponent<DemoScene>().photonView.Owner.NickName;
             }
         }
 
@@ -70,6 +71,21 @@ namespace Com.SJTU.PhotonVRKeys
         public override void OnPlayerEnteredRoom(Player other)
         {
             Debug.LogFormat("OnPlayerEnteredRoom() {0}", other.NickName); // not seen if you're the player connecting
+
+            GameObject[] userPrefabs = GameObject.FindGameObjectsWithTag("Player");
+            if (userPrefabs != null && userPrefabs.Length > 0)
+            {
+                //Debug.Log("userPrefabs.Length = " + userPrefabs.Length);
+
+                foreach (GameObject userPrefab in userPrefabs)
+                {
+                    if (userPrefab.GetComponent<DemoScene>().photonView.IsMine)
+                    {
+                        // Network user, receive data
+                        userPrefab.GetComponent<DemoScene>().setIsUpdating(true); // seems that userPrefabs[0] always isMine??
+                    }
+                }
+            }
         }
 
         public override void OnPlayerLeftRoom(Player other)

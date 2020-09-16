@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Collections;
 using Photon.Pun;
 using Com.SJTU.PhotonVRKeys;
+using Photon.Realtime;
 
 namespace VRKeys
 {
@@ -31,6 +32,7 @@ namespace VRKeys
 
         //public GameObject canvasChild;
         //public GameObject keyboardChild;
+        //public Key key;
 
         /// <summary>
         /// See the following for why this is so convoluted:
@@ -39,7 +41,7 @@ namespace VRKeys
         /// </summary>
         private Regex emailValidator = new Regex(@"^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$", RegexOptions.IgnoreCase);
 
-        //private bool isUpdating = false;
+        private bool isUpdating = false;
 
         //private string receivedText;
 
@@ -71,6 +73,17 @@ namespace VRKeys
             keyboard.OnUpdate.AddListener(HandleUpdate);
             keyboard.OnSubmit.AddListener(HandleSubmit);
             keyboard.OnCancel.AddListener(HandleCancel);
+
+            if (!photonView.IsMine)
+            {
+                canvas.enabled = false;
+
+                Renderer[] renders = this.GetComponentsInChildren<Renderer>(true);
+                foreach (Renderer render in renders)
+                {
+                    render.enabled = false;
+                }
+            }
         }
 
         private void OnDisable()
@@ -82,15 +95,18 @@ namespace VRKeys
             keyboard.Disable();
         }
 
-        /*private void Start()
+        private void Start()
         {
-            PhotonNetwork.SerializationRate = 2;
+            /*PhotonNetwork.SerializationRate = 2;
             PhotonNetwork.SendRate = 4;
             if (!photonView.IsMine)
             {
                 keyboard.keysParent.gameObject.SetActive(false);
-            }
-        }*/
+            }*/
+
+            //key = this.GetComponentInChildren<Key>();
+            //Debug.Log(key.name);
+        }
 
         /// <summary>
         /// Press space to show/hide the keyboard.
@@ -99,6 +115,15 @@ namespace VRKeys
         /// </summary>
         private void Update()
         {
+            /*if (!photonView.IsMine)
+            {
+                Renderer[] renders = this.GetComponentsInChildren<Renderer>(true);
+                foreach (Renderer render in renders)
+                {
+                    render.enabled = false;
+                }
+            }*/
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (keyboard.disabled)
@@ -138,10 +163,16 @@ namespace VRKeys
         {
             keyboard.HideValidationMessage();
 
-            //isUpdating = true;
+            isUpdating = true;
 
             //HiddenRegion.HiddenRegionInstance.GetComponent<HiddenRegion>().SetText(keyboard.text);
         }
+
+        /*public override void OnPlayerEnteredRoom(Player other)
+        {
+            Debug.LogFormat("OnPlayerEnteredRoom() {0} in DemoScene.cs", other.NickName); // not seen if you're the player connecting
+            isUpdating = true;
+        }*/
 
         /// <summary>
         /// Validate the email and simulate a form submission. Connect this to OnSubmit.
@@ -198,26 +229,27 @@ namespace VRKeys
         {
             if (stream.IsWriting)
             {
-                //if (isUpdating)
-                //{
-                //Debug.Log("'stream.SendNext(keyboard.text)' in DemoScene.cs");
+                if (isUpdating)
+                {
+                    //Debug.Log("'stream.SendNext(keyboard.text)' in DemoScene.cs by " + this.gameObject.name);
+                    Debug.Log("'stream.SendNext(keyboard.text)' in DemoScene.cs");
 
-                //PhotonNetwork.SerializationRate = 2;
-                //PhotonNetwork.SendRate = 4;
+                    //PhotonNetwork.SerializationRate = 2;
+                    //PhotonNetwork.SendRate = 4;
 
-                // We own this user: send the others our data
-                stream.SendNext(keyboard.text);
-                //stream.SendNext(_placeholder.text);
-                //stream.SendNext(_validationNotice.text);
-                //stream.SendNext(_infoNotice.text);
-                //stream.SendNext(_successNotice.text);
+                    // We own this user: send the others our data
+                    stream.SendNext(keyboard.text);
+                    //stream.SendNext(_placeholder.text);
+                    //stream.SendNext(_validationNotice.text);
+                    //stream.SendNext(_infoNotice.text);
+                    //stream.SendNext(_successNotice.text);
 
-                //isUpdating = false;
-                //}
+                    isUpdating = false;
+                }
             }
             else
             {
-                //Debug.Log("'keyboard.SetText((string)stream.ReceiveNext());' in DemoScene.cs");
+                Debug.Log("'stream.ReceiveNext());' in DemoScene.cs");
                 string receivedText = (string)stream.ReceiveNext();
 
                 GameObject[] userPrefabs = GameObject.FindGameObjectsWithTag("Player");
@@ -225,14 +257,22 @@ namespace VRKeys
                 {
                     foreach (GameObject userPrefab in userPrefabs)
                     {
-                        // Network user, receive data
-                        userPrefab.GetComponentInChildren<Keyboard>().SetText(receivedText);
+                        if (userPrefab.GetComponent<DemoScene>().photonView.IsMine)
+                        {
+                            // Network user, receive data
+                            userPrefab.GetComponentInChildren<Keyboard>().SetText(receivedText, true);
+                        }
                     }
                 }
             }
         }
 
         #endregion
+
+        public void setIsUpdating(bool value)
+        {
+            isUpdating = value;
+        }
 
     }
 }
