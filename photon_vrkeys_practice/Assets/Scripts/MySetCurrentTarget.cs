@@ -37,8 +37,8 @@ public class MySetCurrentTarget : MonoBehaviour
         OVRTouchpad.AddListener(LocalTouchEventCallback);
 
         // Initialize the proper target set
-        targetSet = 1;
-        SwitchTargets[0].SetActive<OVRLipSyncContextMorphTarget>(1);
+        targetSet = 0;
+        SwitchTargets[0].SetActive<OVRLipSyncContextMorphTarget>(0);
         //SwitchTargets[1].SetActive<OVRLipSyncContextMorphTarget>(0);
     }
 
