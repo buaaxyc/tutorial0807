@@ -49,8 +49,11 @@ namespace Com.SJTU.PhotonVRKeys
 
         void Start()
         {
-            progressLabel.SetActive(false);
-            controlPanel.SetActive(true);
+            //progressLabel.SetActive(false);
+            //controlPanel.SetActive(true);
+            progressLabel.SetActive(true);
+            controlPanel.SetActive(false);
+            Connect();
         }
 
         #endregion
@@ -64,8 +67,8 @@ namespace Com.SJTU.PhotonVRKeys
         /// </summary>
         public void Connect()
         {
-            progressLabel.SetActive(true);
-            controlPanel.SetActive(false);
+            //progressLabel.SetActive(true);
+            //controlPanel.SetActive(false);
 
             if (PhotonNetwork.IsConnected)
             {

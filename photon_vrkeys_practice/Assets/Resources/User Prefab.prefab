@@ -4235,8 +4235,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4921731894798394952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.20412984, y: 0.6071464, z: 0.060818672}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 5140228160983522386}
   - {fileID: 4917993912555816492}
@@ -4255,7 +4255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb08f495a9bc93a46b97e507bf9be1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionRelativeToUser: {x: 0, y: 1.35, z: 1.75}
+  positionRelativeToUser: {x: 0.5, y: 1.9, z: -0.15}
   keyboardLayout: 0
   placeholder: {fileID: 5033633489994759922}
   placeholderMessage: Tap the keys to begin typing
