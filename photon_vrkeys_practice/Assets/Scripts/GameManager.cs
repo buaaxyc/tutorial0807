@@ -43,8 +43,8 @@ namespace Com.SJTU.PhotonVRKeys
             {
                 Debug.LogFormat("We are Instantiating LocalUser");
                 // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                vrkeys_instance = PhotonNetwork.Instantiate(this.VRKeys.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0);
-                avatar_instance = PhotonNetwork.Instantiate(this.Avatar.name, new Vector3(0.5f, 2.0f, -1.0f), Quaternion.identity, 0);
+                vrkeys_instance = PhotonNetwork.Instantiate(this.VRKeys.name, new Vector3(-0.53f, -1.945f, 1.04f), Quaternion.identity, 0);
+                avatar_instance = PhotonNetwork.Instantiate(this.Avatar.name, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity, 0);
                 //PhotonNetwork.Instantiate(this.VRKeys.name, new Vector3(10f, 0f, 0f), Quaternion.identity, 0);
                 //vrkeys_instance.name += " of " + vrkeys_instance.GetComponent<DemoScene>().photonView.Owner.NickName;
             }

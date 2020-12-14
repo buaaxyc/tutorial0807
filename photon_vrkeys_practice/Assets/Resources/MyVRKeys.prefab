@@ -4468,7 +4468,7 @@ GameObject:
   - component: {fileID: 3190488001469403583}
   - component: {fileID: 4921879358317576690}
   m_Layer: 0
-  m_Name: User Prefab
+  m_Name: MyVRKeys
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

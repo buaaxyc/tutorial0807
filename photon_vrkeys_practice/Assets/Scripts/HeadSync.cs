@@ -19,6 +19,6 @@ public class HeadSync : MonoBehaviour
     void Update()
     {
         avatarHead.transform.rotation = ovrcamera.transform.rotation;
-        avatarBody.transform.position = ovrcamera.transform.position + new Vector3(0.0f, -0.66f, -0.05f);
+        avatarBody.transform.position = ovrcamera.transform.position + new Vector3(0.0f, -1.55f, -0.05f);
     }
 }
