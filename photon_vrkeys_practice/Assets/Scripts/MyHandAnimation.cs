@@ -18,21 +18,62 @@ public class MyHandAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if we are pressing grab, set animator bool IsGrabbing to true
-        if (Input.GetAxis(_handGrab.InputName) >= 0.01f)
+        if (Input.GetAxis(_handGrab.ThumbTouch) >= 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) < 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) < 0.01f)
         {
-            if (!_anim.GetBool("IsGrabbing"))
-            {
-                _anim.SetBool("IsGrabbing", true);
-            }
+            _anim.SetBool("IsThumbTouching", true);
+            _anim.SetBool("IsIndexTouching", false);
+            _anim.SetBool("IsMiddlePressing", false);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        else if (Input.GetAxis(_handGrab.ThumbTouch) < 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) >= 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) < 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", false);
+            _anim.SetBool("IsIndexTouching", true);
+            _anim.SetBool("IsMiddlePressing", false);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        else if (Input.GetAxis(_handGrab.ThumbTouch) < 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) < 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) >= 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", false);
+            _anim.SetBool("IsIndexTouching", false);
+            _anim.SetBool("IsMiddlePressing", true);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        else if (Input.GetAxis(_handGrab.ThumbTouch) >= 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) >= 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) < 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", true);
+            _anim.SetBool("IsIndexTouching", true);
+            _anim.SetBool("IsMiddlePressing", false);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        else if (Input.GetAxis(_handGrab.ThumbTouch) >= 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) < 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) >= 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", true);
+            _anim.SetBool("IsIndexTouching", false);
+            _anim.SetBool("IsMiddlePressing", true);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        else if (Input.GetAxis(_handGrab.ThumbTouch) < 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) >= 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) >= 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", false);
+            _anim.SetBool("IsIndexTouching", true);
+            _anim.SetBool("IsMiddlePressing", true);
+            _anim.SetBool("IsGrabbing", false);
+        }
+        //if we are pressing grab, set animator bool IsGrabbing to true
+        else if (Input.GetAxis(_handGrab.ThumbTouch) >= 0.01f && Input.GetAxis(_handGrab.IndexFingerTouch) >= 0.01f && Input.GetAxis(_handGrab.MiddleFingerPress) >= 0.01f)
+        {
+            _anim.SetBool("IsThumbTouching", false);
+            _anim.SetBool("IsIndexTouching", false);
+            _anim.SetBool("IsMiddlePressing", false);
+            _anim.SetBool("IsGrabbing", true);
         }
         else
         {
-            //if we let go of grab, set IsGrabbing to false
-            if (_anim.GetBool("IsGrabbing"))
-            {
-                _anim.SetBool("IsGrabbing", false);
-            }
+            _anim.SetBool("IsThumbTouching", false);
+            _anim.SetBool("IsIndexTouching", false);
+            _anim.SetBool("IsMiddlePressing", false);
+            _anim.SetBool("IsGrabbing", false);
         }
 
     }

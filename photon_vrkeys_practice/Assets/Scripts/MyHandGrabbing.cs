@@ -6,7 +6,11 @@ using UnityEngine.XR; //needs to be UnityEngine.VR in Versions before 2017.2
 public class MyHandGrabbing : MonoBehaviour
 {
 
-    public string InputName;
+    //public string InputName;
+    public string ThumbTouch;
+    public string IndexFingerTouch;
+    public string IndexFingerPress;
+    public string MiddleFingerPress;
     public MyHandGrabbing OtherHandReference;
     public XRNode NodeType;
     public Vector3 ObjectGrabOffset;
@@ -23,6 +27,8 @@ public class MyHandGrabbing : MonoBehaviour
     private Vector3 _lastFramePosition;
     private Transform _currentGrabObject;
     private bool _isGrabbing;
+
+    //private string Js09 = "Js09", Js10 = "Js10", Js11 = "Js11", Js12 = "Js12", Js13 = "Js13", Js14 = "Js14", Js15 = "Js15", Js16 = "Js16";
 
     // Use this for initialization
     void Start()
@@ -53,7 +59,7 @@ public class MyHandGrabbing : MonoBehaviour
             if (colliders.Length > 0)
             {
                 //if there are colliders, take the first one if we press the grab button and it has the tag for grabbing
-                if (Input.GetAxis(InputName) >= 0.01f && colliders[0].transform.CompareTag(GrabTag))
+                if (Input.GetAxis(ThumbTouch) >= 0.01f && Input.GetAxis(IndexFingerTouch) >= 0.01f && Input.GetAxis(MiddleFingerPress) >= 0.01f && colliders[0].transform.CompareTag(GrabTag))
                 {
                     //if we are already grabbing, return
                     if (_isGrabbing)
@@ -94,7 +100,7 @@ public class MyHandGrabbing : MonoBehaviour
         {
 
             //if we we release grab button, release current object
-            if (Input.GetAxis(InputName) < 0.01f)
+            if (Input.GetAxis(ThumbTouch) < 0.01f || Input.GetAxis(IndexFingerTouch) < 0.01f || Input.GetAxis(MiddleFingerPress) < 0.01f)
             {
 
 
@@ -119,7 +125,7 @@ public class MyHandGrabbing : MonoBehaviour
         }
 
         //release grab ?
-        if (Input.GetAxis(InputName) < 0.01f && _isGrabbing)
+        if (Input.GetAxis(ThumbTouch) < 0.01f || Input.GetAxis(IndexFingerTouch) < 0.01f || Input.GetAxis(MiddleFingerPress) < 0.01f && _isGrabbing)
         {
             _isGrabbing = false;
         }

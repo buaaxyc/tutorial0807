@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23672d5d276771429028365a66ae288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputName: TriggerLeft
+  ThumbTouch: Js15
+  IndexFingerTouch: Js13
+  IndexFingerPress: Js9
+  MiddleFingerPress: Js11
   OtherHandReference: {fileID: 7390092203566591995}
   NodeType: 4
   ObjectGrabOffset: {x: 0, y: 0, z: 0}
@@ -209,14 +212,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5486386523111958859}
-  m_LocalRotation: {x: 0.118391044, y: -0.07824814, z: -0.07841131, w: 0.9867687}
+  m_LocalRotation: {x: 0.11839119, y: -0.078248166, z: -0.07841228, w: 0.9867686}
   m_LocalPosition: {x: -0.09369575, y: -0.0046046446, z: -0.003779087}
   m_LocalScale: {x: 0.99999934, y: 1, z: 1.0000005}
   m_Children:
   - {fileID: 5486386524717159580}
   m_Father: {fileID: 5486386523715177353}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.790001, y: -10.218, z: -10.235001}
 --- !u!1 &5486386523128576737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,14 +2794,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5486386524383089523}
-  m_LocalRotation: {x: -0.13885899, y: 0.071503356, z: -0.08907442, w: 0.98370284}
+  m_LocalRotation: {x: -0.13885877, y: 0.07150424, z: -0.08907017, w: 0.9837032}
   m_LocalPosition: {x: -0.088191524, y: 0.00014274596, z: 0.025355034}
   m_LocalScale: {x: 1.000001, y: 0.99999964, z: 1.0000001}
   m_Children:
   - {fileID: 5486386523095095342}
   m_Father: {fileID: 5486386525144950968}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -15.097001, y: 9.865001, z: -11.658001}
 --- !u!1 &5486386524393623432
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,14 +4044,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5486386524619320744}
-  m_LocalRotation: {x: -0.29078355, y: 0.11158674, z: -0.18722388, w: 0.9316333}
+  m_LocalRotation: {x: -0.29078752, y: 0.11158827, z: -0.18722211, w: 0.9316322}
   m_LocalPosition: {x: -0.07935882, y: 0.008854675, z: 0.041669004}
   m_LocalScale: {x: 0.99999964, y: 0.99999994, z: 1.0000001}
   m_Children:
   - {fileID: 5486386525179046179}
   m_Father: {fileID: 5486386525144950968}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -30.002, y: 21.458, z: -28.539001}
 --- !u!1 &5486386524658301787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5254,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23672d5d276771429028365a66ae288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputName: TriggerRight
+  ThumbTouch: Js16
+  IndexFingerTouch: Js14
+  IndexFingerPress: Js10
+  MiddleFingerPress: Js12
   OtherHandReference: {fileID: 2087284223226557796}
   NodeType: 5
   ObjectGrabOffset: {x: 0, y: 0, z: 0}
