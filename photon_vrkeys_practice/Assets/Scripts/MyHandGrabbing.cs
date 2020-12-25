@@ -85,10 +85,10 @@ public class MyHandGrabbing : MonoBehaviour
                     _currentGrabObject = colliders[0].transform;
 
                     //does other hand currently grab object? then release it!
-                    if (OtherHandReference.CurrentGrabObject != null)
-                    {
-                        OtherHandReference.CurrentGrabObject = null;
-                    }
+                    //if (OtherHandReference.CurrentGrabObject != null)
+                    //{
+                    //    OtherHandReference.CurrentGrabObject = null;
+                    //}
 
 
 

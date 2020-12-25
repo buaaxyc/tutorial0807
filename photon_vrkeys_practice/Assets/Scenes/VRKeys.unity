@@ -254,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &112214405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,8 +300,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.030000001, y: 0.5133041, z: 0.030000001}
+  m_Center: {x: -0.00003752964, y: 0.21051973, z: 0.0011688542}
 --- !u!1 &171416780
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &768478137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,8 +878,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.030000001, y: 0.5133041, z: 0.030000001}
+  m_Center: {x: -0.00003752964, y: 0.21051973, z: 0.0011688542}
 --- !u!1 &815262005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,7 +2882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Avatar
       value: 
-      objectReference: {fileID: 5511993981291846373, guid: fa0af41ed6dc2cf4d9cc1a41a974e736,
+      objectReference: {fileID: 7375327709140378320, guid: 2b614e50af6b5ed4c9803bbe59bf3a08,
         type: 3}
     - target: {fileID: 6822509091445010458, guid: 286ed2837158cc84d88f93a0bd672227,
         type: 3}

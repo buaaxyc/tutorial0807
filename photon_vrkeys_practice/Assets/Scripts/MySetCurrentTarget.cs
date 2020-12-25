@@ -54,13 +54,13 @@ public class MySetCurrentTarget : MonoBehaviour
             targetSet = 0;
             SetCurrentTarget();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        /*else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             //head.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
             targetSet = 1;
             SetCurrentTarget();
         }
-        /*else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             head.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
             targetSet = 2;
@@ -98,23 +98,23 @@ public class MySetCurrentTarget : MonoBehaviour
                 SwitchTargets[0].SetActive<OVRLipSyncContextMorphTarget>(0);
                 //SwitchTargets[1].SetActive<OVRLipSyncContextMorphTarget>(0);
                 break;
-            case (1):
-                SwitchTargets[0].SetActive<OVRLipSyncContextTextureFlip>(1);
-                //SwitchTargets[1].SetActive<OVRLipSyncContextTextureFlip>(1);
-                break;
-                /*case (2):
+                /*case (1):
+                    SwitchTargets[0].SetActive<OVRLipSyncContextTextureFlip>(1);
+                    //SwitchTargets[1].SetActive<OVRLipSyncContextTextureFlip>(1);
+                    break;
+                case (2):
                     SwitchTargets[0].SetActive<OVRLipSyncContextMorphTarget>(2);
                     //SwitchTargets[1].SetActive<OVRLipSyncContextMorphTarget>(2);
                     break;
-                case(3):
+                case (3):
                     SwitchTargets[0].SetActive<OVRLipSyncContextTextureFlip>(1);
                     SwitchTargets[1].SetActive<OVRLipSyncContextTextureFlip>(3);
                     break;
-                case(4):
+                case (4):
                     SwitchTargets[0].SetActive<OVRLipSyncContextMorphTarget>(2);
                     SwitchTargets[1].SetActive<OVRLipSyncContextMorphTarget>(4);
                     break;
-                case(5):
+                case (5):
                     SwitchTargets[0].SetActive<OVRLipSyncContextTextureFlip>(2);
                     SwitchTargets[1].SetActive<OVRLipSyncContextTextureFlip>(5);
                     break;*/
