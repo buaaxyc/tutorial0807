@@ -47,8 +47,8 @@ public class MyHandGrabbing : MonoBehaviour
     void Update()
     {
         //update hand position and rotation
-        transform.position = InputTracking.GetLocalPosition(NodeType);
-        transform.rotation = InputTracking.GetLocalRotation(NodeType);
+        //transform.position = InputTracking.GetLocalPosition(NodeType);
+        //transform.rotation = InputTracking.GetLocalRotation(NodeType);
 
 
         //if we don't have an active object in hand, look if there is one in proximity
@@ -69,7 +69,8 @@ public class MyHandGrabbing : MonoBehaviour
                     _isGrabbing = true;
 
                     //set current object to the object we have picked up (set it as child)
-                    colliders[0].transform.SetParent(transform);
+                    //colliders[0].transform.SetParent(transform);
+                    colliders[0].transform.SetParent(GetComponentInChildren<Transform>());
 
                     //if there is no rigidbody to the grabbed object attached, add one
                     if (colliders[0].GetComponent<Rigidbody>() == null)

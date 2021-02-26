@@ -133,6 +133,7 @@
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRSpine.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRUtilities.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\TwistRelaxer.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\TwistSolver.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionEffector.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionLookAt.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionObject.cs" />
@@ -152,7 +153,9 @@
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\AimPoser.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\Amplifier.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\BodyTilt.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\CCDBendGoal.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\EditorIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\EditorIKPose.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\HitReaction.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\HitReactionVRIK.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\Inertia.cs" />
@@ -214,7 +217,9 @@
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\PlatformRotator.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Limb IK\Scripts\BendGoal.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Rotation Limits\Scripts\Turret.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Oculus\VRIKAvatarScaleCalibrationOculus.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\HitReactionVRIKTrigger.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKCalibrationBasic.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKCalibrationController.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKPlatform.cs" />
     <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKPlatformController.cs" />
@@ -246,6 +251,7 @@
     <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Singleton.cs" />
     <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\SolverManager.cs" />
     <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\TriggerEventBroadcaster.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\V2Tools.cs" />
     <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\V3Tools.cs" />
     <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Warning.cs" />
     <Reference Include="UnityEngine">
